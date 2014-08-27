@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>サテライトサイトサンプル2</title>
+<meta name="author" content="作成者名" />
+<meta name="description" content="サイトの説明文を入れます">
+<meta name="keywords" content="キーワードを入れます">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="Dreamweaver">
+<link href="style.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; }
+ul.nav a { zoom: 1; }
+</style>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#page-top');    
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+	<header>
+		<div id="head">
+			<div id="title">
+				<a href="index.html">
+					<h1>ページタイトル</h1>
+				</a>
+				<h3>ページサブタイトル</h3> 
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="index.html">ABOUT</a></li>
+				<li><a href="index.html">CONTENTS</a></li>
+				<li><a href="index.html">GALLERY</a></li>
+				<li><a href="index.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</header>
+<div class="container">
+	<div id="main" class="clearfix">
+  <div class="sidebar1">
+		<h3>メニュー</h3>
+    <ul class="nav">
+      <li><a href="sub/page1.html">リンク 1</a></li>
+      <li><a href="sub/page2.html">リンク 2</a></li>
+      <li><a href="sub/page3.html">リンク 3</a></li>
+      <li><a href="sub/page4.html">リンク 4</a></li>
+			<li><a href="sub/page5.html">リンク 5</a></li>
+			<li><a href="sub/page6.html">リンク 6</a></li>
+			<li><a href="sub/page7.html">リンク 7</a></li>
+			<li><a href="sub/page8.html">リンク 8</a></li>
+    </ul>
+		<p>ニュース・更新情報など</p>
+  </div>
+  <div class="content"> 
+		<div id="place">
+			<nav>
+				<p>
+					<a href="/" rel="index up up up">トップページ</a> >
+					<!--<a href="/products/" rel="up up">第二階層</a> >
+					<a href="/products/dishwashers/" rel="up">第三階層</a> >
+					<a>現在位置</a>-->
+				</p>
+			</nav>
+		</div>
+		<!--<div id="front">
+			<img src="img/front.jpg" alt="トップページのイメージ画像です" width="600px">
+		</div>-->
+    <h1>見出し１</h1>
+    <p>本文</p>
+    <h2>見出し２</h2>
+    <p>本文</p>
+    <h3>見出し３</h3>
+    <p>本文</p>
+    <h4>見出し４</h4>
+    <p>本文</p>
+  	</div>
+		</div>
+  </div>
+	<footer>
+	 <div id="footnav">
+		<ul>
+    <li><a href="#">ホーム</a></li>
+    <li><a href="#">サイトマップ</a></li>
+    <li><a href="#">コンセプト</a></li>
+    <li><a href="#">運営主体</a></li>
+    <li class="last"><a href="#">お問い合わせ</a></li>
+		</ul> 
+	</div>
+    <p>Copyright © 2014 , hujuu All rights reserved.</p>
+  </footer>
+	<p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+</body>
+</html>
