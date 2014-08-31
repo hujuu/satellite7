@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body , html {   
+    height: 100%;
+}
 body {
 	font-family: 'Roboto',"メイリオ", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
 	background: #f6f6f6;
@@ -258,7 +261,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 footer {
 	width:100%;
 	color: #777;
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 	position: relative;
 	clear: both;
 	text-align:center;
@@ -267,10 +270,10 @@ footer {
 }
 footer p{
 	color:#333;
-	width: 80%;
-	height: 30px;
+	width: 100%;
 	padding: 0;
-	margin: 30px 10% 15px 10%;
+	text-align:center;
+	margin:0;
 }
 .fltrt {
 	float: right;
